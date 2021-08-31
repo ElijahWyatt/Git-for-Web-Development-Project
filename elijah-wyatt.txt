@@ -80,3 +80,23 @@ Link to finished codepen: https://codepen.io/ElijahWyatt/pen/YzQqXEm?editors=110
     36. What is the command we would use to push our repo up to github? 
         "git push -u origin branch-name", then just "git push" after the first time.
     37. Walk me through Lambda's git flow.
+        -fork the repo you are working on
+        -clone the repo using 'Clone or Download' button on github
+        -in your terminal use 'cd' command to get to the directory where you want to clone the forked repo
+        -git clone <link-to-repo>
+        -cd <repo name>
+        -git checkout -b 'firstname-lastname'
+        -work on the repo and get the projet assignment does
+        -'git add .' to add the repo changes and make them ready to commit
+        -'git commit -m "your commit message here"' commits the changes with your message
+        -'git push -u origin branch-name' will push the commits from your local machine to github
+            -remember:'git push -u origin branch-name' only applies to the first time you push.
+            you can use 'git push' subsequently
+        -once the changes are on github, you can submit a pull request
+        -go back to your forked project on github and click on 'Branch:master' button on the left side
+        -this creates a dropdown where you can select the branch with your name on it
+        -click on your branch then click "New pull request" which will redirect you to the PR page
+        -the first thing  you should do is click the dropdown that says "base repository" and change it to your forked repo
+        instead of the Lambda repo
+        -click the create pull request button
+        -copy the url on the PR page and paste and submit it in Canvas
