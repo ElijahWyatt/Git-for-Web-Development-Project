@@ -1,0 +1,102 @@
+Link to finished codepen: https://codepen.io/ElijahWyatt/pen/YzQqXEm?editors=1100
+
+    1. What is Semantic HTML? 
+        semantic HTML describes what an element is and what it does to both the browser and the developer
+    2. What is HTML used for?
+        HTML is used to build the structure of a web page.
+    3. What is an attribute and where do we put it?
+        an attribute adds aditional information to HTML elements, and shoud be placed in the start/opening tag of an element
+    4. What is the h1 tag used for? How many times should I use it on a page?
+        The h1 tag defines the most important heading/title, and should be used no more than once on a webpage.
+    5. Name two tags that have required attributes
+        the <a> tag and the <img> tag
+    6. What do we put in the head of our HTML document? 
+        The head contains the <title> of a webpage, styles, and other elements called metadata. None of this information is displayed in the console.
+    7. What is an id?
+         id is an attribute
+    8. What elements can I add an id to?
+        any HTML element
+    9. How many times can I use the same id on a page? 
+        once
+    10. What is a class?
+        class is an attribute 
+    11. What elements can I add a class to? 
+        any HTML element
+    12. How many times can I use the same class on a page? 
+        Class can be used for multiple HTML elements
+    13. How do I get my link to open in a new tab?
+        use target="_blank"
+    14. What is the alt attribute in the image tag used for?
+        short description of what the image is in case the image doesn't load 
+    15. How do I reference an id?
+        use the "#"
+    16. What is the difference between a section and a div
+        divs don't have any meaning other than their class, lang, and title attributes while a section represents content
+        that shares a theme.
+    17. What is CSS used for?
+        CSS is used to style the HTML of a webpage 
+    18. How to we select an element? Example - every h2 on the page
+        h2{} will select every <h2> element
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        A class can be used for multiple elements while an Id can only be used for one element.
+        use an id for a single <a> tag so that tag takes you to one section of your webpage
+        use a class for multiple <p> tags that you want to style a certain way in CSS (font,color,etc.)
+    20. How do we select classes in CSS?
+        .class{}
+    21. How do we select a p element with a single class of “human””?
+        use p.human{}
+    22. What is a parent child selector? When would this be useful?
+        it selects the elements that are a child of a specific element, which could be used to select all the <li> elements that
+        that are the children of a <ul> element.
+    23. How do you select all links within a div with the class of sidebar?
+        "div.sidebar > a{}"
+    24. What is a pseudo selector?
+        they are used to add style only when certain conditions are met
+    25. What do we use the change the spacing between lines?
+        the line-height property
+    26. What do we use to change the spacing between letters?
+        the letter-spacing property
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    28. How do I add a 1px border around my div that is dotted and black?
+        div{
+            border-style: dashed;
+            border-width: 1px;
+            border-color: black;
+        }
+    29. How do I select everything on the page? 
+        '*' selector
+    30. How do I write a comment in CSS?
+        /* this is a comment in CSS */
+    31. How do I find out what file I am in, when I am using the command line? 
+        'pwd'
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        'ls'
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+        'rm' you could lose a lot of work if you remove the wrong file b/c there's no recovery.
+    34. Why should I use version control? 
+        because you're able to track changes with it, which is especially useful when collaborating with other developers on a team.
+    35. How often should I commit to github?
+        every 20 minutes
+    36. What is the command we would use to push our repo up to github? 
+        "git push -u origin branch-name", then just "git push" after the first time.
+    37. Walk me through Lambda's git flow.
+        -fork the repo you are working on
+        -clone the repo using 'Clone or Download' button on github
+        -in your terminal use 'cd' command to get to the directory where you want to clone the forked repo
+        -git clone <link-to-repo>
+        -cd <repo name>
+        -git checkout -b 'firstname-lastname'
+        -work on the repo and get the projet assignment does
+        -'git add .' to add the repo changes and make them ready to commit
+        -'git commit -m "your commit message here"' commits the changes with your message
+        -'git push -u origin branch-name' will push the commits from your local machine to github
+            -remember:'git push -u origin branch-name' only applies to the first time you push.
+            you can use 'git push' subsequently
+        -once the changes are on github, you can submit a pull request
+        -go back to your forked project on github and click on 'Branch:master' button on the left side
+        -this creates a dropdown where you can select the branch with your name on it
+        -click on your branch then click "New pull request" which will redirect you to the PR page
+        -the first thing  you should do is click the dropdown that says "base repository" and change it to your forked repo
+        instead of the Lambda repo
+        -click the create pull request button
+        -copy the url on the PR page and paste and submit it in Canvas
